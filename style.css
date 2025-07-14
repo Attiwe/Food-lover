@@ -215,6 +215,7 @@ nav a:hover {
 }
 
 /* End offer */
+
 #menu {
   background-color: #f4f2ed;
   padding: 60px 20px;
@@ -361,3 +362,182 @@ nav a:hover {
 }
 
 /*End daytim */
+
+/* gallery */
+#gallery {
+  height: 80vh;
+  background-image: url("./img/offer-background.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#gallery .container-gallery {
+  max-width: 1300px;
+  margin: auto;
+}
+
+#gallery img {
+  width: 300px;
+  height: 200px;
+}
+
+#gallery .gallery-title {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 45px;
+  font-style: italic;
+  text-align: center;
+  padding: 150px 0px 50px;
+}
+
+#gallery .img-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  /* padding-left: 50px; */
+}
+
+#gallery img {
+  border-radius: 20px;
+}
+
+.img-gallery img:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 12px #686774;
+}
+
+/*End gallery */
+
+/*  contact */
+#contact {
+  height: 60vh;
+  background-color: #1098ad;
+}
+
+#contact .container-contact {
+  max-width: 1300px;
+  margin: auto;
+}
+
+#contact .contain-info svg {
+  width: 30px;
+  height: 30px;
+  color: #0328f8;
+}
+
+#contact .contain-contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 60px;
+}
+
+#contact .contain-info h4 {
+  font-size: 30px;
+  color: #383848;
+  padding-top: 50px;
+}
+
+#contact .contain-info p {
+  color: #463e3c;
+  line-height: 1.9;
+}
+
+#contact .contact-form {
+  padding-top: 50px;
+}
+#contact .contact-form input,
+textarea {
+  background-color: #22b8cf;
+  display: block;
+  width: 500px;
+  padding: 20px;
+  margin: 20px;
+  border: none;
+}
+
+#contact .contact-form textarea {
+  padding: 40px;
+}
+
+#contact .btn-contact {
+  margin-left: 20px;
+  background-color: #74c0fc;
+}
+#contact .contact-form input:hover {
+  /* transform: scale(1.1); 
+  transition: 0.3s ease-in-out; */
+  box-shadow: 0 4px 12px #686774;
+}
+.btn-contact:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 12px #686774;
+}
+
+/*End contact */
+
+/* responsive */
+/* medium screan table */
+@media (max-width: 1000px) {
+  /* body {
+    width: 100%;
+  } */
+  .contact h1,
+  p {
+    text-align: center;
+  }
+  .contact .btn {
+    padding-left: 150px;
+  }
+  #about .about-content img {
+    display: none;
+  }
+
+  #about {
+    height: 60vh;
+  }
+  #about .about-content p {
+    font-size: 20px;
+    padding: 20px;
+  }
+  #about .btn-secondary {
+    position: relative;
+    left: 350px;
+    /* color: red; */
+    margin-right: 50px;
+    padding: 20px;
+  }
+
+  #offer {
+    height: 60vh;
+  }
+
+  #daytim {
+    height: 30vh;
+  }
+
+  #gallery {
+    height: 60vh;
+  }
+
+  #gallery .img-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 100px;
+  }
+
+  #contact {
+    height: 40vh;
+  }
+
+  #contact .contact-form input,
+  textarea {
+    width: 400px;
+  }
+
+  .btn-contact {
+    padding: 25px;
+  }
+}
